@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/cryptologo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.0.1"></script>
+    <title>CryptoGraph</title>
+</head>
+<body>
+    <header>
+        <header>
+            <div id="header-container">
+                <img src="./assets/cryptologo.png" alt="Logo" id="logo">
+                <h2>A&nbsp;&nbsp;C R Y P T O&nbsp;&nbsp;T O O L</h2>
+                <h1>C R Y P T O G R A P H</h1>
+                <div id="reference">
+                    <a href="https://github.com/anuarMoreno" target="_blank">
+                        <button class="gradient-button">M e</button>
+                    </a>
+                    <a href="https://coinmarketcap.com" target="_blank">
+                        <button class="gradient-button">C M C</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </header>
+    <main>
+        <div id="texto">
+            <p>  Explore real-time value trends of Bitcoin and Ethereum with our cryptocurrency tracking platform. Our interactive chart, color-coded for clarity, provides a concise view of these cryptocurrencies' performance over time. The data for this platform is extracted from Coin Market Cap, ensuring you stay updated and make informed decisions.
+            </p>
+            <div class="image-container">
+                <img class="small-image" src="./assets/ethereum.png" alt="Ethereum">
+                <img class="small-image" src="./assets/bitcoin.png" alt="Bitcoin">
+            </div>
+        </div>
+        <div id="graficoContainer">
+            <canvas id="grafico"></canvas>
+            <button id="resetZoom" class="reset-button"><img src="./assets/reset.png" alt="Reset" id="reset-zoom-button"></button>
+        </div>
+    </main>
+    <script src="./scripts/chart.js"></script>
+</body>
+</html>
